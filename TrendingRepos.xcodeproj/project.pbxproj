@@ -3,12 +3,11 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		1CD7287E8146CF6132C3700E /* Pods_TrendingReposTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 88E1FBCB9461108D421D3E2E /* Pods_TrendingReposTests.framework */; };
-		282C0BADA38F58DCE7F93820 /* Pods_TrendingReposUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DF324B7BBD944B38AF92C684 /* Pods_TrendingReposUITests.framework */; };
 		A6676125677277CA3CD884DB /* Pods_TrendingRepos.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BF5C203C77F2952C698630CE /* Pods_TrendingRepos.framework */; };
 		CD64617B22B1A5550024F8CA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD64617A22B1A5550024F8CA /* AppDelegate.swift */; };
 		CD64617D22B1A5550024F8CA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD64617C22B1A5550024F8CA /* ViewController.swift */; };
@@ -16,20 +15,12 @@
 		CD64618222B1A5570024F8CA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CD64618122B1A5570024F8CA /* Assets.xcassets */; };
 		CD64618522B1A5570024F8CA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CD64618322B1A5570024F8CA /* LaunchScreen.storyboard */; };
 		CD64619022B1A5570024F8CA /* TrendingReposTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD64618F22B1A5570024F8CA /* TrendingReposTests.swift */; };
-		CD64619B22B1A5570024F8CA /* TrendingReposUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD64619A22B1A5570024F8CA /* TrendingReposUITests.swift */; };
 		CD6461AD22B1B7680024F8CA /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = CD6461AF22B1B7680024F8CA /* Localizable.strings */; };
 		CD6461B222B1B7E70024F8CA /* Strings.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD6461B122B1B7E70024F8CA /* Strings.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
 		CD64618C22B1A5570024F8CA /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = CD64616F22B1A5550024F8CA /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = CD64617622B1A5550024F8CA;
-			remoteInfo = TrendingRepos;
-		};
-		CD64619722B1A5570024F8CA /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = CD64616F22B1A5550024F8CA /* Project object */;
 			proxyType = 1;
@@ -57,9 +48,6 @@
 		CD64618B22B1A5570024F8CA /* TrendingReposTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TrendingReposTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CD64618F22B1A5570024F8CA /* TrendingReposTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrendingReposTests.swift; sourceTree = "<group>"; };
 		CD64619122B1A5570024F8CA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		CD64619622B1A5570024F8CA /* TrendingReposUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TrendingReposUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		CD64619A22B1A5570024F8CA /* TrendingReposUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrendingReposUITests.swift; sourceTree = "<group>"; };
-		CD64619C22B1A5570024F8CA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CD6461AE22B1B7680024F8CA /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		CD6461B122B1B7E70024F8CA /* Strings.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Strings.swift; sourceTree = "<group>"; };
 		DF324B7BBD944B38AF92C684 /* Pods_TrendingReposUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TrendingReposUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -79,14 +67,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				1CD7287E8146CF6132C3700E /* Pods_TrendingReposTests.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		CD64619322B1A5570024F8CA /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				282C0BADA38F58DCE7F93820 /* Pods_TrendingReposUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -111,7 +91,6 @@
 			children = (
 				CD64617922B1A5550024F8CA /* TrendingRepos */,
 				CD64618E22B1A5570024F8CA /* TrendingReposTests */,
-				CD64619922B1A5570024F8CA /* TrendingReposUITests */,
 				CD64617822B1A5550024F8CA /* Products */,
 				81DC9E3368C1084E20514800 /* Pods */,
 				E5EAA61983A5C8B58A96C156 /* Frameworks */,
@@ -123,7 +102,6 @@
 			children = (
 				CD64617722B1A5550024F8CA /* TrendingRepos.app */,
 				CD64618B22B1A5570024F8CA /* TrendingReposTests.xctest */,
-				CD64619622B1A5570024F8CA /* TrendingReposUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -149,15 +127,6 @@
 				CD64619122B1A5570024F8CA /* Info.plist */,
 			);
 			path = TrendingReposTests;
-			sourceTree = "<group>";
-		};
-		CD64619922B1A5570024F8CA /* TrendingReposUITests */ = {
-			isa = PBXGroup;
-			children = (
-				CD64619A22B1A5570024F8CA /* TrendingReposUITests.swift */,
-				CD64619C22B1A5570024F8CA /* Info.plist */,
-			);
-			path = TrendingReposUITests;
 			sourceTree = "<group>";
 		};
 		CD6461AA22B1B72F0024F8CA /* Resources */ = {
@@ -222,25 +191,6 @@
 			productReference = CD64618B22B1A5570024F8CA /* TrendingReposTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		CD64619522B1A5570024F8CA /* TrendingReposUITests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = CD6461A522B1A5570024F8CA /* Build configuration list for PBXNativeTarget "TrendingReposUITests" */;
-			buildPhases = (
-				2D8A7BC69C91BD638AE3DF11 /* [CP] Check Pods Manifest.lock */,
-				CD64619222B1A5570024F8CA /* Sources */,
-				CD64619322B1A5570024F8CA /* Frameworks */,
-				CD64619422B1A5570024F8CA /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				CD64619822B1A5570024F8CA /* PBXTargetDependency */,
-			);
-			name = TrendingReposUITests;
-			productName = TrendingReposUITests;
-			productReference = CD64619622B1A5570024F8CA /* TrendingReposUITests.xctest */;
-			productType = "com.apple.product-type.bundle.ui-testing";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -255,10 +205,6 @@
 						CreatedOnToolsVersion = 10.2.1;
 					};
 					CD64618A22B1A5570024F8CA = {
-						CreatedOnToolsVersion = 10.2.1;
-						TestTargetID = CD64617622B1A5550024F8CA;
-					};
-					CD64619522B1A5570024F8CA = {
 						CreatedOnToolsVersion = 10.2.1;
 						TestTargetID = CD64617622B1A5550024F8CA;
 					};
@@ -279,7 +225,6 @@
 			targets = (
 				CD64617622B1A5550024F8CA /* TrendingRepos */,
 				CD64618A22B1A5570024F8CA /* TrendingReposTests */,
-				CD64619522B1A5570024F8CA /* TrendingReposUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -297,13 +242,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		CD64618922B1A5570024F8CA /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		CD64619422B1A5570024F8CA /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -328,28 +266,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-TrendingRepos/Pods-TrendingRepos-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		2D8A7BC69C91BD638AE3DF11 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-TrendingReposUITests-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
 		80D0048FAC8874A5355EB9DB /* [CP] Check Pods Manifest.lock */ = {
@@ -400,7 +316,7 @@
 			inputFileListPaths = (
 			);
 			inputPaths = (
-				"$SRCROOT/TrendingRepos/Resources/en.lproj/Localizable.strings",
+				$SRCROOT/TrendingRepos/Resources/en.lproj/Localizable.strings,
 			);
 			name = "Generate Resources";
 			outputFileListPaths = (
@@ -454,14 +370,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		CD64619222B1A5570024F8CA /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				CD64619B22B1A5570024F8CA /* TrendingReposUITests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -469,11 +377,6 @@
 			isa = PBXTargetDependency;
 			target = CD64617622B1A5550024F8CA /* TrendingRepos */;
 			targetProxy = CD64618C22B1A5570024F8CA /* PBXContainerItemProxy */;
-		};
-		CD64619822B1A5570024F8CA /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = CD64617622B1A5550024F8CA /* TrendingRepos */;
-			targetProxy = CD64619722B1A5570024F8CA /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -705,48 +608,6 @@
 			};
 			name = Release;
 		};
-		CD6461A622B1A5570024F8CA /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 7888BCDEA4B598BC9B2231AA /* Pods-TrendingReposUITests.debug.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = VB2B85C3L8;
-				INFOPLIST_FILE = TrendingReposUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.trendingrepos.TrendingReposUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = TrendingRepos;
-			};
-			name = Debug;
-		};
-		CD6461A722B1A5570024F8CA /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 01B4CB1B053026946339070D /* Pods-TrendingReposUITests.release.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = VB2B85C3L8;
-				INFOPLIST_FILE = TrendingReposUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.trendingrepos.TrendingReposUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = TrendingRepos;
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -773,15 +634,6 @@
 			buildConfigurations = (
 				CD6461A322B1A5570024F8CA /* Debug */,
 				CD6461A422B1A5570024F8CA /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		CD6461A522B1A5570024F8CA /* Build configuration list for PBXNativeTarget "TrendingReposUITests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				CD6461A622B1A5570024F8CA /* Debug */,
-				CD6461A722B1A5570024F8CA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
