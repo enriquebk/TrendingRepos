@@ -1,5 +1,7 @@
 # Trending Repos
 
+[![Build Status](https://travis-ci.org/enriquebk/TrendingRepos.svg?branch=master)](https://travis-ci.org/enriquebk/TrendingRepos)
+
 ## Installation
 To install Ruby Gems dependencies, run the following command in terminal: 
 
