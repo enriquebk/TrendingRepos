@@ -1,0 +1,5 @@
+strings:
+  inputs: TrendingRepos/Resources/en.lproj/Localizable.strings 
+  outputs:
+    - templateName: structured-swift4
+      output: TrendingRepos/Resources/Strings.swift
