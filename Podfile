@@ -15,9 +15,4 @@ target 'TrendingRepos' do
     # Pods for testing
   end
 
-  target 'TrendingReposUITests' do
-    inherit! :search_paths
-    # Pods for testing
-  end
-
 end
