@@ -1,0 +1,5 @@
+language: swift
+osx_image: xcode10.2
+script: xcodebuild -workspace TrendingRepos.xcworkspace -scheme TrendingRepos -destination 'platform=iOS Simulator,name=iPhone X' build test
+after_success:
+  - bash <(curl -s https://codecov.io/bash)
