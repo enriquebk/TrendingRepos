@@ -192,6 +192,7 @@
 				CD64617422B1A5550024F8CA /* Frameworks */,
 				CD64617522B1A5550024F8CA /* Resources */,
 				CD6461A922B1B29A0024F8CA /* Run SwiftLint */,
+				29574B28D18B4A292BABC8E6 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -312,6 +313,23 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		29574B28D18B4A292BABC8E6 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TrendingRepos/Pods-TrendingRepos-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TrendingRepos/Pods-TrendingRepos-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-TrendingRepos/Pods-TrendingRepos-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		2D8A7BC69C91BD638AE3DF11 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -382,7 +400,7 @@
 			inputFileListPaths = (
 			);
 			inputPaths = (
-				$SRCROOT/TrendingRepos/Resources/en.lproj/Localizable.strings,
+				"$SRCROOT/TrendingRepos/Resources/en.lproj/Localizable.strings",
 			);
 			name = "Generate Resources";
 			outputFileListPaths = (
