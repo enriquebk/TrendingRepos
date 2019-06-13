@@ -6,7 +6,11 @@
 //  Copyright © 2019 Enrique Bermúdez. All rights reserved.
 //
 
-struct Owner {
+struct Owner: Codable, Equatable {
     let name: String
     let avatarURL: String
+    
+    enum CodingKeys: String, CodingKey {
+        case name = "login", avatarURL = "avatar_url"
+    }
 }
