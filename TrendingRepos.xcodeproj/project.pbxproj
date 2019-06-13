@@ -12,7 +12,6 @@
 		CD64617B22B1A5550024F8CA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD64617A22B1A5550024F8CA /* AppDelegate.swift */; };
 		CD64618222B1A5570024F8CA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CD64618122B1A5570024F8CA /* Assets.xcassets */; };
 		CD64618522B1A5570024F8CA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CD64618322B1A5570024F8CA /* LaunchScreen.storyboard */; };
-		CD64619022B1A5570024F8CA /* TrendingReposTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD64618F22B1A5570024F8CA /* TrendingReposTests.swift */; };
 		CD6461AD22B1B7680024F8CA /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = CD6461AF22B1B7680024F8CA /* Localizable.strings */; };
 		CD6461B222B1B7E70024F8CA /* Strings.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD6461B122B1B7E70024F8CA /* Strings.swift */; };
 		CD6461BC22B1C3260024F8CA /* Transition.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD6461B422B1C3250024F8CA /* Transition.swift */; };
@@ -25,6 +24,17 @@
 		CD6461CC22B1D57A0024F8CA /* RepositoryListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD6461CB22B1D57A0024F8CA /* RepositoryListTableViewController.swift */; };
 		CD6461CE22B1D5C10024F8CA /* MainNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD6461CD22B1D5C10024F8CA /* MainNavigationController.swift */; };
 		CD6461D022B1D8200024F8CA /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD6461CF22B1D8200024F8CA /* ViewModel.swift */; };
+		CD6461DD22B1EE970024F8CA /* MVVMViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD6461D122B1EE970024F8CA /* MVVMViewTests.swift */; };
+		CD6461DE22B1EE970024F8CA /* NavigatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD6461D222B1EE970024F8CA /* NavigatorTests.swift */; };
+		CD6461DF22B1EE970024F8CA /* NavigationTransitionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD6461D322B1EE970024F8CA /* NavigationTransitionTests.swift */; };
+		CD6461E022B1EE970024F8CA /* UIViewControllerMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD6461D522B1EE970024F8CA /* UIViewControllerMock.swift */; };
+		CD6461E122B1EE970024F8CA /* FakeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD6461D622B1EE970024F8CA /* FakeViewModel.swift */; };
+		CD6461E222B1EE970024F8CA /* TransitionMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD6461D722B1EE970024F8CA /* TransitionMock.swift */; };
+		CD6461E322B1EE970024F8CA /* MVVMViewMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD6461D822B1EE970024F8CA /* MVVMViewMock.swift */; };
+		CD6461E422B1EE970024F8CA /* FakeViewModelNavigationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD6461D922B1EE970024F8CA /* FakeViewModelNavigationManager.swift */; };
+		CD6461E522B1EE970024F8CA /* UINavigationControllerMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD6461DA22B1EE970024F8CA /* UINavigationControllerMock.swift */; };
+		CD6461E622B1EE970024F8CA /* RouteMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD6461DB22B1EE970024F8CA /* RouteMock.swift */; };
+		CD6461E722B1EE970024F8CA /* MVVMUtilsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD6461DC22B1EE970024F8CA /* MVVMUtilsTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,7 +62,6 @@
 		CD64618422B1A5570024F8CA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CD64618622B1A5570024F8CA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CD64618B22B1A5570024F8CA /* TrendingReposTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TrendingReposTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		CD64618F22B1A5570024F8CA /* TrendingReposTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrendingReposTests.swift; sourceTree = "<group>"; };
 		CD64619122B1A5570024F8CA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CD6461AE22B1B7680024F8CA /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		CD6461B122B1B7E70024F8CA /* Strings.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Strings.swift; sourceTree = "<group>"; };
@@ -66,6 +75,17 @@
 		CD6461CB22B1D57A0024F8CA /* RepositoryListTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepositoryListTableViewController.swift; sourceTree = "<group>"; };
 		CD6461CD22B1D5C10024F8CA /* MainNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainNavigationController.swift; sourceTree = "<group>"; };
 		CD6461CF22B1D8200024F8CA /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
+		CD6461D122B1EE970024F8CA /* MVVMViewTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MVVMViewTests.swift; sourceTree = "<group>"; };
+		CD6461D222B1EE970024F8CA /* NavigatorTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NavigatorTests.swift; sourceTree = "<group>"; };
+		CD6461D322B1EE970024F8CA /* NavigationTransitionTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NavigationTransitionTests.swift; sourceTree = "<group>"; };
+		CD6461D522B1EE970024F8CA /* UIViewControllerMock.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIViewControllerMock.swift; sourceTree = "<group>"; };
+		CD6461D622B1EE970024F8CA /* FakeViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FakeViewModel.swift; sourceTree = "<group>"; };
+		CD6461D722B1EE970024F8CA /* TransitionMock.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TransitionMock.swift; sourceTree = "<group>"; };
+		CD6461D822B1EE970024F8CA /* MVVMViewMock.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MVVMViewMock.swift; sourceTree = "<group>"; };
+		CD6461D922B1EE970024F8CA /* FakeViewModelNavigationManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FakeViewModelNavigationManager.swift; sourceTree = "<group>"; };
+		CD6461DA22B1EE970024F8CA /* UINavigationControllerMock.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UINavigationControllerMock.swift; sourceTree = "<group>"; };
+		CD6461DB22B1EE970024F8CA /* RouteMock.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RouteMock.swift; sourceTree = "<group>"; };
+		CD6461DC22B1EE970024F8CA /* MVVMUtilsTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MVVMUtilsTests.swift; sourceTree = "<group>"; };
 		DF324B7BBD944B38AF92C684 /* Pods_TrendingReposUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TrendingReposUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -142,7 +162,8 @@
 		CD64618E22B1A5570024F8CA /* TrendingReposTests */ = {
 			isa = PBXGroup;
 			children = (
-				CD64618F22B1A5570024F8CA /* TrendingReposTests.swift */,
+				CDF7597F22B1F08F0023D06C /* MVVM */,
+				CDF7598022B1F0CE0023D06C /* Navigation */,
 				CD64619122B1A5570024F8CA /* Info.plist */,
 			);
 			path = TrendingReposTests;
@@ -216,6 +237,47 @@
 				CD6461CB22B1D57A0024F8CA /* RepositoryListTableViewController.swift */,
 			);
 			path = RepositoryList;
+			sourceTree = "<group>";
+		};
+		CD6461D422B1EE970024F8CA /* TestDoubles */ = {
+			isa = PBXGroup;
+			children = (
+				CD6461D622B1EE970024F8CA /* FakeViewModel.swift */,
+				CD6461D822B1EE970024F8CA /* MVVMViewMock.swift */,
+			);
+			path = TestDoubles;
+			sourceTree = "<group>";
+		};
+		CDF7597F22B1F08F0023D06C /* MVVM */ = {
+			isa = PBXGroup;
+			children = (
+				CD6461D122B1EE970024F8CA /* MVVMViewTests.swift */,
+				CD6461D422B1EE970024F8CA /* TestDoubles */,
+			);
+			path = MVVM;
+			sourceTree = "<group>";
+		};
+		CDF7598022B1F0CE0023D06C /* Navigation */ = {
+			isa = PBXGroup;
+			children = (
+				CD6461D222B1EE970024F8CA /* NavigatorTests.swift */,
+				CD6461DC22B1EE970024F8CA /* MVVMUtilsTests.swift */,
+				CD6461D322B1EE970024F8CA /* NavigationTransitionTests.swift */,
+				CDF7598122B1F0EF0023D06C /* TestDoubles */,
+			);
+			path = Navigation;
+			sourceTree = "<group>";
+		};
+		CDF7598122B1F0EF0023D06C /* TestDoubles */ = {
+			isa = PBXGroup;
+			children = (
+				CD6461D722B1EE970024F8CA /* TransitionMock.swift */,
+				CD6461D922B1EE970024F8CA /* FakeViewModelNavigationManager.swift */,
+				CD6461DA22B1EE970024F8CA /* UINavigationControllerMock.swift */,
+				CD6461DB22B1EE970024F8CA /* RouteMock.swift */,
+				CD6461D522B1EE970024F8CA /* UIViewControllerMock.swift */,
+			);
+			path = TestDoubles;
 			sourceTree = "<group>";
 		};
 		E5EAA61983A5C8B58A96C156 /* Frameworks */ = {
@@ -454,7 +516,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CD64619022B1A5570024F8CA /* TrendingReposTests.swift in Sources */,
+				CD6461E622B1EE970024F8CA /* RouteMock.swift in Sources */,
+				CD6461E322B1EE970024F8CA /* MVVMViewMock.swift in Sources */,
+				CD6461E422B1EE970024F8CA /* FakeViewModelNavigationManager.swift in Sources */,
+				CD6461E522B1EE970024F8CA /* UINavigationControllerMock.swift in Sources */,
+				CD6461DF22B1EE970024F8CA /* NavigationTransitionTests.swift in Sources */,
+				CD6461E722B1EE970024F8CA /* MVVMUtilsTests.swift in Sources */,
+				CD6461E222B1EE970024F8CA /* TransitionMock.swift in Sources */,
+				CD6461E122B1EE970024F8CA /* FakeViewModel.swift in Sources */,
+				CD6461E022B1EE970024F8CA /* UIViewControllerMock.swift in Sources */,
+				CD6461DD22B1EE970024F8CA /* MVVMViewTests.swift in Sources */,
+				CD6461DE22B1EE970024F8CA /* NavigatorTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
