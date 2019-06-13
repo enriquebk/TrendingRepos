@@ -44,7 +44,7 @@ enum APIRequest {
         }
     }
     
-    private func url() -> URL? {
+    private var url: URL? {
         
         var urlComponents = URLComponents()
         urlComponents.scheme = self.scheme
@@ -57,8 +57,8 @@ enum APIRequest {
         return urlComponents.url
     }
     
-    func request() -> URLRequest? {
-        if let url = self.url() {
+    var request: URLRequest? {
+        if let url = self.url {
             var request: URLRequest = URLRequest(url: url)
             request.httpMethod = self.method
             return request

@@ -13,7 +13,7 @@ import RxCocoa
 class APIClient: NSObject {
     
     func execute(request apiRequest: APIRequest) -> Observable<Data> {
-        guard let request = apiRequest.request() else {
+        guard let request = apiRequest.request else {
             return Observable.error(NetworkError.invalidRequest)
         }
         
