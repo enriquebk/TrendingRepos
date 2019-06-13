@@ -12,11 +12,23 @@ import RxCocoa
 
 class APIClient: NSObject {
     
-    func execute(request apiRequest: APIRequest) -> Observable<Data> {
+    private func execute(request apiRequest: APIRequest) -> Observable<Data> {
         guard let request = apiRequest.request else {
             return Observable.error(NetworkError.invalidRequest)
         }
         
         return URLSession.shared.rx.data(request: request)
+    }
+    
+    func searchRepositoriesByStars(from date: Date, page:Int) -> Observable<[Repository]> {
+            
+            return self.execute(request: .searchRepositoriesByStars(page: page, fromDate:date)).map({
+                do {
+                    let page =  try JSONDecoder().decode(RepositoriesPage.self, from: $0)
+                    return page.repositories
+                } catch {
+                    throw error
+                }
+            })
     }
 }
