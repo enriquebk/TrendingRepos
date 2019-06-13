@@ -36,6 +36,7 @@
 		CD6461E622B1EE970024F8CA /* RouteMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD6461DB22B1EE970024F8CA /* RouteMock.swift */; };
 		CD6461E722B1EE970024F8CA /* MVVMUtilsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD6461DC22B1EE970024F8CA /* MVVMUtilsTests.swift */; };
 		CD84E14922B29585007A829B /* APIRequestTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD84E14822B29585007A829B /* APIRequestTests.swift */; };
+		CD84E14B22B29D78007A829B /* NetworkErrorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD84E14A22B29D78007A829B /* NetworkErrorTests.swift */; };
 		CDF7598522B1FB680023D06C /* APIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDF7598322B1FB680023D06C /* APIClient.swift */; };
 		CDF7598622B1FB680023D06C /* APIRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDF7598422B1FB680023D06C /* APIRequest.swift */; };
 		CDF7598822B1FC1C0023D06C /* NetworkError.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDF7598722B1FC1C0023D06C /* NetworkError.swift */; };
@@ -92,6 +93,7 @@
 		CD6461DB22B1EE970024F8CA /* RouteMock.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RouteMock.swift; sourceTree = "<group>"; };
 		CD6461DC22B1EE970024F8CA /* MVVMUtilsTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MVVMUtilsTests.swift; sourceTree = "<group>"; };
 		CD84E14822B29585007A829B /* APIRequestTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIRequestTests.swift; sourceTree = "<group>"; };
+		CD84E14A22B29D78007A829B /* NetworkErrorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkErrorTests.swift; sourceTree = "<group>"; };
 		CDF7598322B1FB680023D06C /* APIClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIClient.swift; sourceTree = "<group>"; };
 		CDF7598422B1FB680023D06C /* APIRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIRequest.swift; sourceTree = "<group>"; };
 		CDF7598722B1FC1C0023D06C /* NetworkError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkError.swift; sourceTree = "<group>"; };
@@ -265,6 +267,7 @@
 			isa = PBXGroup;
 			children = (
 				CD84E14822B29585007A829B /* APIRequestTests.swift */,
+				CD84E14A22B29D78007A829B /* NetworkErrorTests.swift */,
 			);
 			path = NetworkLayer;
 			sourceTree = "<group>";
@@ -570,6 +573,7 @@
 				CD6461E022B1EE970024F8CA /* UIViewControllerMock.swift in Sources */,
 				CD6461DD22B1EE970024F8CA /* MVVMViewTests.swift in Sources */,
 				CD84E14922B29585007A829B /* APIRequestTests.swift in Sources */,
+				CD84E14B22B29D78007A829B /* NetworkErrorTests.swift in Sources */,
 				CD6461DE22B1EE970024F8CA /* NavigatorTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
