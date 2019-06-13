@@ -38,6 +38,7 @@
 		CDF7598522B1FB680023D06C /* APIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDF7598322B1FB680023D06C /* APIClient.swift */; };
 		CDF7598622B1FB680023D06C /* APIRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDF7598422B1FB680023D06C /* APIRequest.swift */; };
 		CDF7598822B1FC1C0023D06C /* NetworkError.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDF7598722B1FC1C0023D06C /* NetworkError.swift */; };
+		CDF7598C22B286980023D06C /* DateExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDF7598B22B286980023D06C /* DateExtensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -92,6 +93,7 @@
 		CDF7598322B1FB680023D06C /* APIClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIClient.swift; sourceTree = "<group>"; };
 		CDF7598422B1FB680023D06C /* APIRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIRequest.swift; sourceTree = "<group>"; };
 		CDF7598722B1FC1C0023D06C /* NetworkError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkError.swift; sourceTree = "<group>"; };
+		CDF7598B22B286980023D06C /* DateExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateExtensions.swift; sourceTree = "<group>"; };
 		DF324B7BBD944B38AF92C684 /* Pods_TrendingReposUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TrendingReposUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -151,6 +153,7 @@
 		CD64617922B1A5550024F8CA /* TrendingRepos */ = {
 			isa = PBXGroup;
 			children = (
+				CDF7598A22B286820023D06C /* Extensions */,
 				CD6461AA22B1B72F0024F8CA /* Resources */,
 				CDF7598222B1FB430023D06C /* NetwoekLayer */,
 				CD6461B722B1C3250024F8CA /* MVVM */,
@@ -295,6 +298,14 @@
 				CDF7598722B1FC1C0023D06C /* NetworkError.swift */,
 			);
 			path = NetwoekLayer;
+			sourceTree = "<group>";
+		};
+		CDF7598A22B286820023D06C /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				CDF7598B22B286980023D06C /* DateExtensions.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 		E5EAA61983A5C8B58A96C156 /* Frameworks */ = {
@@ -527,6 +538,7 @@
 				CD6461BF22B1C3260024F8CA /* MVVMView.swift in Sources */,
 				CDF7598522B1FB680023D06C /* APIClient.swift in Sources */,
 				CD6461C122B1C3260024F8CA /* MVVMUtils.swift in Sources */,
+				CDF7598C22B286980023D06C /* DateExtensions.swift in Sources */,
 				CD6461D022B1D8200024F8CA /* ViewModel.swift in Sources */,
 				CD6461C722B1D2A50024F8CA /* Repository.swift in Sources */,
 			);

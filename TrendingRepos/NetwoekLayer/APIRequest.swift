@@ -10,46 +10,57 @@ import Foundation
 
 enum APIRequest {
 
-    case repository(page:Int)
+    case searchRepositoriesByStars(page:Int, fromDate:Date)
     
-    private func httpProtocol() -> String {
+    private var scheme: String {
         return "https"
     }
     
-    private func basePath() -> String {
+    private var host: String {
         return "api.github.com"
     }
     
-    private func path() -> String {
+    private var path: String {
         switch self {
-        case .repository:
+        case .searchRepositoriesByStars:
             return "/search/repositories"
         }
     }
     
-    private func method() -> String {
+    private var method: String {
         switch self {
-        case .repository:
+        case .searchRepositoriesByStars:
             return "GET"
         }
     }
     
-    private func parameters() -> [String:String] {
+    private var queryItems: [String: String] {
         switch self {
-        case .repository:
-            return [:]
+        case .searchRepositoriesByStars(let page, let fromDate):
+            return ["q": "created:>\(fromDate.asQueryString)",
+                    "sort": "stars",
+                    "order": "desc",
+                    "page": "\(page)"]
         }
     }
     
     private func url() -> URL? {
-        return URL(string: "\(self.httpProtocol())://\(self.basePath())\(self.path())")
+        
+        var urlComponents = URLComponents()
+        urlComponents.scheme = self.scheme
+        urlComponents.host = self.host
+        urlComponents.path = self.path
+        urlComponents.queryItems = self.queryItems.map {
+            URLQueryItem(name: $0.0, value: $0.1)
+        }
+        
+        return urlComponents.url
     }
     
     func request() -> URLRequest? {
         if let url = self.url() {
-            
             var request: URLRequest = URLRequest(url: url)
-            request.httpMethod = self.method()
+            request.httpMethod = self.method
             return request
         }
         return nil
