@@ -11,8 +11,8 @@ import Foundation
 // swiftlint:disable explicit_type_interface function_parameter_count identifier_name line_length
 // swiftlint:disable nesting type_body_length type_name
 internal enum L10n {
-  /// String
-  internal static let string = L10n.tr("Localizable", "String")
+  /// Trending Repos
+  internal static let trendingRepos = L10n.tr("Localizable", "Trending Repos")
 }
 // swiftlint:enable explicit_type_interface function_parameter_count identifier_name line_length
 // swiftlint:enable nesting type_body_length type_name
