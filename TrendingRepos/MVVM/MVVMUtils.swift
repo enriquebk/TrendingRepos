@@ -8,13 +8,13 @@
 
 import UIKit
 
-public extension MVVMView where Self: UIViewController, Self.ViewModelType: NavigatorManager {
+public extension MVVMView where Self: UIViewController, Self.ViewModelType: NavigationManager {
     
     static func instantiate(with viewModel: Self.ViewModelType) -> Self {
         
         let viewController = Self()
         viewController.bind(to: viewModel)
-        viewController.viewModel.navigator = Navigator<Self.ViewModelType.CoordinatorType>(root: viewController)
+        viewController.viewModel.navigator = Navigator<Self.ViewModelType.RouteType>(root: viewController)
         
         return viewController
     }

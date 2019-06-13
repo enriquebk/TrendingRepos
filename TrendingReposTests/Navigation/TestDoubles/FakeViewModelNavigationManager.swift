@@ -1,5 +1,5 @@
 //
-//  FakeViewModelCoordinator.swift
+//  FakeViewModelNavigationManager.swift
 //  TrendingRepos
 //
 //  Created by Enrique Bermúdez on 6/12/19.
@@ -15,7 +15,7 @@ class FakeRoute: Route {
     }
 }
 
-class FakeViewModelNavigationManager: ViewModel, NavigatorManager {
+class FakeViewModelNavigationManager: ViewModel, NavigationManager {
     
     var navigator: Navigator<FakeRoute>!
 }

@@ -1,5 +1,5 @@
 //
-//  CoordinatorTests.swift
+//  NavigatorTests.swift
 //  TrendingRepos
 //
 //  Created by Enrique Bermúdez on 6/12/19.
@@ -19,16 +19,16 @@ class NavigatorTests: XCTestCase {
         navigator = Navigator<RouteMock>.init(root: root)
     }
     
-    func testCoordinatorInit() {
+    func testNavigatorInit() {
 
         if let navigatorRoot = navigator.root as? UIViewController {
             XCTAssertTrue(navigatorRoot === root)
         } else {
-            XCTFail("Coordinatior root was't correclty initialized")
+            XCTFail("Navigator root was't correclty initialized")
         }
     }
     
-    func testCoordinatorNavigation() {
+    func testNavigate() {
 
         let routeMock = RouteMock()
         

@@ -26,9 +26,9 @@ public class Navigator<NavigatorRoute: Route> {
     }
 }
 
-public protocol NavigatorManager {
+public protocol NavigationManager {
     
-    associatedtype CoordinatorType: Route
+    associatedtype RouteType: Route
 
-    var navigator: Navigator<CoordinatorType>! { get set }
+    var navigator: Navigator<RouteType>! { get set }
 }
