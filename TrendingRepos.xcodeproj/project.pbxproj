@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		1CD7287E8146CF6132C3700E /* Pods_TrendingReposTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 88E1FBCB9461108D421D3E2E /* Pods_TrendingReposTests.framework */; };
 		A6676125677277CA3CD884DB /* Pods_TrendingRepos.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BF5C203C77F2952C698630CE /* Pods_TrendingRepos.framework */; };
+		CD45774922B52D2500A0E3E6 /* RepositoryViewState.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD45774822B52D2500A0E3E6 /* RepositoryViewState.swift */; };
 		CD64617B22B1A5550024F8CA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD64617A22B1A5550024F8CA /* AppDelegate.swift */; };
 		CD64618222B1A5570024F8CA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CD64618122B1A5570024F8CA /* Assets.xcassets */; };
 		CD64618522B1A5570024F8CA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CD64618322B1A5570024F8CA /* LaunchScreen.storyboard */; };
@@ -21,7 +22,7 @@
 		CD6461C122B1C3260024F8CA /* MVVMUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD6461BB22B1C3260024F8CA /* MVVMUtils.swift */; };
 		CD6461C722B1D2A50024F8CA /* Repository.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD6461C622B1D2A50024F8CA /* Repository.swift */; };
 		CD6461C922B1D4A50024F8CA /* Owner.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD6461C822B1D4A50024F8CA /* Owner.swift */; };
-		CD6461CC22B1D57A0024F8CA /* RepositoryListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD6461CB22B1D57A0024F8CA /* RepositoryListTableViewController.swift */; };
+		CD6461CC22B1D57A0024F8CA /* RepositoriesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD6461CB22B1D57A0024F8CA /* RepositoriesViewController.swift */; };
 		CD6461CE22B1D5C10024F8CA /* MainNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD6461CD22B1D5C10024F8CA /* MainNavigationController.swift */; };
 		CD6461D022B1D8200024F8CA /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD6461CF22B1D8200024F8CA /* ViewModel.swift */; };
 		CD6461DD22B1EE970024F8CA /* MVVMViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD6461D122B1EE970024F8CA /* MVVMViewTests.swift */; };
@@ -39,6 +40,11 @@
 		CD84E14B22B29D78007A829B /* NetworkErrorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD84E14A22B29D78007A829B /* NetworkErrorTests.swift */; };
 		CD84E14D22B29F07007A829B /* RepositoriesPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD84E14C22B29F07007A829B /* RepositoriesPage.swift */; };
 		CD84E15222B2A608007A829B /* RepositoriesPageTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD84E15122B2A608007A829B /* RepositoriesPageTests.swift */; };
+		CDE622AA22B45D47005A0B94 /* RepositoriesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDE622A922B45D47005A0B94 /* RepositoriesViewModel.swift */; };
+		CDE622AD22B45E9E005A0B94 /* RepositoryTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDE622AB22B45E9E005A0B94 /* RepositoryTableViewCell.swift */; };
+		CDE622AE22B45E9E005A0B94 /* RepositoryTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CDE622AC22B45E9E005A0B94 /* RepositoryTableViewCell.xib */; };
+		CDE622B222B45EF2005A0B94 /* NibIdentifiable.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDE622B122B45EF2005A0B94 /* NibIdentifiable.swift */; };
+		CDE622B422B460D9005A0B94 /* RepositoriesRoute.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDE622B322B460D9005A0B94 /* RepositoriesRoute.swift */; };
 		CDF7598522B1FB680023D06C /* APIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDF7598322B1FB680023D06C /* APIClient.swift */; };
 		CDF7598622B1FB680023D06C /* APIRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDF7598422B1FB680023D06C /* APIRequest.swift */; };
 		CDF7598822B1FC1C0023D06C /* NetworkError.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDF7598722B1FC1C0023D06C /* NetworkError.swift */; };
@@ -64,6 +70,7 @@
 		ACBCFD4706F9167490AEDA77 /* Pods-TrendingReposTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TrendingReposTests.debug.xcconfig"; path = "Target Support Files/Pods-TrendingReposTests/Pods-TrendingReposTests.debug.xcconfig"; sourceTree = "<group>"; };
 		AEB76D1677039ED96F9EDC7D /* Pods-TrendingRepos.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TrendingRepos.debug.xcconfig"; path = "Target Support Files/Pods-TrendingRepos/Pods-TrendingRepos.debug.xcconfig"; sourceTree = "<group>"; };
 		BF5C203C77F2952C698630CE /* Pods_TrendingRepos.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TrendingRepos.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CD45774822B52D2500A0E3E6 /* RepositoryViewState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepositoryViewState.swift; sourceTree = "<group>"; };
 		CD64617722B1A5550024F8CA /* TrendingRepos.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TrendingRepos.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CD64617A22B1A5550024F8CA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CD64618122B1A5570024F8CA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -80,7 +87,7 @@
 		CD6461BB22B1C3260024F8CA /* MVVMUtils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MVVMUtils.swift; sourceTree = "<group>"; };
 		CD6461C622B1D2A50024F8CA /* Repository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Repository.swift; sourceTree = "<group>"; };
 		CD6461C822B1D4A50024F8CA /* Owner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Owner.swift; sourceTree = "<group>"; };
-		CD6461CB22B1D57A0024F8CA /* RepositoryListTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepositoryListTableViewController.swift; sourceTree = "<group>"; };
+		CD6461CB22B1D57A0024F8CA /* RepositoriesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepositoriesViewController.swift; sourceTree = "<group>"; };
 		CD6461CD22B1D5C10024F8CA /* MainNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainNavigationController.swift; sourceTree = "<group>"; };
 		CD6461CF22B1D8200024F8CA /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
 		CD6461D122B1EE970024F8CA /* MVVMViewTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MVVMViewTests.swift; sourceTree = "<group>"; };
@@ -98,6 +105,11 @@
 		CD84E14A22B29D78007A829B /* NetworkErrorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkErrorTests.swift; sourceTree = "<group>"; };
 		CD84E14C22B29F07007A829B /* RepositoriesPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepositoriesPage.swift; sourceTree = "<group>"; };
 		CD84E15122B2A608007A829B /* RepositoriesPageTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepositoriesPageTests.swift; sourceTree = "<group>"; };
+		CDE622A922B45D47005A0B94 /* RepositoriesViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepositoriesViewModel.swift; sourceTree = "<group>"; };
+		CDE622AB22B45E9E005A0B94 /* RepositoryTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepositoryTableViewCell.swift; sourceTree = "<group>"; };
+		CDE622AC22B45E9E005A0B94 /* RepositoryTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RepositoryTableViewCell.xib; sourceTree = "<group>"; };
+		CDE622B122B45EF2005A0B94 /* NibIdentifiable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NibIdentifiable.swift; sourceTree = "<group>"; };
+		CDE622B322B460D9005A0B94 /* RepositoriesRoute.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepositoriesRoute.swift; sourceTree = "<group>"; };
 		CDF7598322B1FB680023D06C /* APIClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIClient.swift; sourceTree = "<group>"; };
 		CDF7598422B1FB680023D06C /* APIRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIRequest.swift; sourceTree = "<group>"; };
 		CDF7598722B1FC1C0023D06C /* NetworkError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkError.swift; sourceTree = "<group>"; };
@@ -161,7 +173,7 @@
 		CD64617922B1A5550024F8CA /* TrendingRepos */ = {
 			isa = PBXGroup;
 			children = (
-				CDF7598A22B286820023D06C /* Extensions */,
+				CDE622AF22B45ED4005A0B94 /* Utils */,
 				CD6461AA22B1B72F0024F8CA /* Resources */,
 				CDF7598222B1FB430023D06C /* NetworkLayer */,
 				CD6461B722B1C3250024F8CA /* MVVM */,
@@ -230,6 +242,7 @@
 		CD6461C322B1D21C0024F8CA /* Routes */ = {
 			isa = PBXGroup;
 			children = (
+				CDE622B322B460D9005A0B94 /* RepositoriesRoute.swift */,
 			);
 			path = Routes;
 			sourceTree = "<group>";
@@ -244,18 +257,22 @@
 		CD6461C522B1D2290024F8CA /* Scenes */ = {
 			isa = PBXGroup;
 			children = (
-				CD6461CA22B1D4F40024F8CA /* RepositoryList */,
+				CD6461CA22B1D4F40024F8CA /* Repositories */,
 				CD6461CD22B1D5C10024F8CA /* MainNavigationController.swift */,
 			);
 			path = Scenes;
 			sourceTree = "<group>";
 		};
-		CD6461CA22B1D4F40024F8CA /* RepositoryList */ = {
+		CD6461CA22B1D4F40024F8CA /* Repositories */ = {
 			isa = PBXGroup;
 			children = (
-				CD6461CB22B1D57A0024F8CA /* RepositoryListTableViewController.swift */,
+				CD6461CB22B1D57A0024F8CA /* RepositoriesViewController.swift */,
+				CDE622A922B45D47005A0B94 /* RepositoriesViewModel.swift */,
+				CDE622AB22B45E9E005A0B94 /* RepositoryTableViewCell.swift */,
+				CDE622AC22B45E9E005A0B94 /* RepositoryTableViewCell.xib */,
+				CD45774822B52D2500A0E3E6 /* RepositoryViewState.swift */,
 			);
-			path = RepositoryList;
+			path = Repositories;
 			sourceTree = "<group>";
 		};
 		CD6461D422B1EE970024F8CA /* TestDoubles */ = {
@@ -283,6 +300,15 @@
 				CD84E14C22B29F07007A829B /* RepositoriesPage.swift */,
 			);
 			path = Entities;
+			sourceTree = "<group>";
+		};
+		CDE622AF22B45ED4005A0B94 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				CDF7598A22B286820023D06C /* Extensions */,
+				CDE622B122B45EF2005A0B94 /* NibIdentifiable.swift */,
+			);
+			path = Utils;
 			sourceTree = "<group>";
 		};
 		CDF7597F22B1F08F0023D06C /* MVVM */ = {
@@ -435,6 +461,7 @@
 				CD64618522B1A5570024F8CA /* LaunchScreen.storyboard in Resources */,
 				CD6461AD22B1B7680024F8CA /* Localizable.strings in Resources */,
 				CD64618222B1A5570024F8CA /* Assets.xcassets in Resources */,
+				CDE622AE22B45E9E005A0B94 /* RepositoryTableViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -554,11 +581,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				CD84E14D22B29F07007A829B /* RepositoriesPage.swift in Sources */,
-				CD6461CC22B1D57A0024F8CA /* RepositoryListTableViewController.swift in Sources */,
+				CD6461CC22B1D57A0024F8CA /* RepositoriesViewController.swift in Sources */,
+				CDE622AD22B45E9E005A0B94 /* RepositoryTableViewCell.swift in Sources */,
 				CD6461B222B1B7E70024F8CA /* Strings.swift in Sources */,
 				CD6461BE22B1C3260024F8CA /* Navigator.swift in Sources */,
 				CD6461C922B1D4A50024F8CA /* Owner.swift in Sources */,
 				CD6461BC22B1C3260024F8CA /* Transition.swift in Sources */,
+				CDE622AA22B45D47005A0B94 /* RepositoriesViewModel.swift in Sources */,
+				CD45774922B52D2500A0E3E6 /* RepositoryViewState.swift in Sources */,
+				CDE622B422B460D9005A0B94 /* RepositoriesRoute.swift in Sources */,
 				CD6461CE22B1D5C10024F8CA /* MainNavigationController.swift in Sources */,
 				CD6461BD22B1C3260024F8CA /* Route.swift in Sources */,
 				CD64617B22B1A5550024F8CA /* AppDelegate.swift in Sources */,
@@ -568,6 +599,7 @@
 				CDF7598522B1FB680023D06C /* APIClient.swift in Sources */,
 				CD6461C122B1C3260024F8CA /* MVVMUtils.swift in Sources */,
 				CDF7598C22B286980023D06C /* DateExtensions.swift in Sources */,
+				CDE622B222B45EF2005A0B94 /* NibIdentifiable.swift in Sources */,
 				CD6461D022B1D8200024F8CA /* ViewModel.swift in Sources */,
 				CD6461C722B1D2A50024F8CA /* Repository.swift in Sources */,
 			);
@@ -748,7 +780,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = VB2B85C3L8;
 				INFOPLIST_FILE = TrendingRepos/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -768,7 +800,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = VB2B85C3L8;
 				INFOPLIST_FILE = TrendingRepos/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
