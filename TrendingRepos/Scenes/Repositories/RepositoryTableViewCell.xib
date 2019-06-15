@@ -27,7 +27,7 @@
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="[Reponame]" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="65S-3n-2e8">
                                         <rect key="frame" x="0.0" y="0.0" width="288" height="22.5"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
@@ -43,7 +43,7 @@
                                 <rect key="frame" x="0.0" y="57.5" width="288" height="20"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="VM6-nY-mlz">
-                                        <rect key="frame" x="0.0" y="0.0" width="224" height="20"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="228" height="20"/>
                                         <subviews>
                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="placeHolder" translatesAutoresizingMaskIntoConstraints="NO" id="r0s-3E-9Am">
                                                 <rect key="frame" x="0.0" y="0.0" width="20" height="20"/>
@@ -52,16 +52,16 @@
                                                     <constraint firstAttribute="width" secondItem="r0s-3E-9Am" secondAttribute="height" multiplier="1:1" id="o02-jF-HZx"/>
                                                 </constraints>
                                             </imageView>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mRB-4B-n9Y">
-                                                <rect key="frame" x="28" y="0.0" width="196" height="20"/>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="13" translatesAutoresizingMaskIntoConstraints="NO" id="mRB-4B-n9Y">
+                                                <rect key="frame" x="28" y="0.0" width="200" height="20"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                         </subviews>
                                     </stackView>
-                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="Gqe-ec-3xo">
-                                        <rect key="frame" x="232" y="0.0" width="56" height="20"/>
+                                    <stackView opaque="NO" contentMode="scaleToFill" alignment="center" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="Gqe-ec-3xo">
+                                        <rect key="frame" x="236" y="0.0" width="52" height="20"/>
                                         <subviews>
                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="star" translatesAutoresizingMaskIntoConstraints="NO" id="8Ls-0r-XOn">
                                                 <rect key="frame" x="0.0" y="0.0" width="20" height="20"/>
@@ -70,8 +70,8 @@
                                                     <constraint firstAttribute="width" secondItem="8Ls-0r-XOn" secondAttribute="height" multiplier="1:1" id="wHD-4R-8io"/>
                                                 </constraints>
                                             </imageView>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="252" verticalHuggingPriority="251" text="340" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Vnl-Xc-lZ7">
-                                                <rect key="frame" x="28" y="0.0" width="28" height="20"/>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="500" verticalHuggingPriority="251" horizontalCompressionResistancePriority="1000" text="340" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Vnl-Xc-lZ7">
+                                                <rect key="frame" x="24" y="1" width="28" height="18"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
@@ -106,6 +106,6 @@
     </objects>
     <resources>
         <image name="placeHolder" width="20" height="20"/>
-        <image name="star" width="225" height="225"/>
+        <image name="star" width="20" height="20"/>
     </resources>
 </document>
