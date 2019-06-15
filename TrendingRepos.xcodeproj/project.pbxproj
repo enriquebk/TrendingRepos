@@ -40,6 +40,7 @@
 		CD84E14B22B29D78007A829B /* NetworkErrorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD84E14A22B29D78007A829B /* NetworkErrorTests.swift */; };
 		CD84E14D22B29F07007A829B /* RepositoriesPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD84E14C22B29F07007A829B /* RepositoriesPage.swift */; };
 		CD84E15222B2A608007A829B /* RepositoriesPageTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD84E15122B2A608007A829B /* RepositoriesPageTests.swift */; };
+		CDA7246122B53B3700CA49F4 /* Assets.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDA7246022B53B3700CA49F4 /* Assets.swift */; };
 		CDE622AA22B45D47005A0B94 /* RepositoriesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDE622A922B45D47005A0B94 /* RepositoriesViewModel.swift */; };
 		CDE622AD22B45E9E005A0B94 /* RepositoryTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDE622AB22B45E9E005A0B94 /* RepositoryTableViewCell.swift */; };
 		CDE622AE22B45E9E005A0B94 /* RepositoryTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CDE622AC22B45E9E005A0B94 /* RepositoryTableViewCell.xib */; };
@@ -105,6 +106,7 @@
 		CD84E14A22B29D78007A829B /* NetworkErrorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkErrorTests.swift; sourceTree = "<group>"; };
 		CD84E14C22B29F07007A829B /* RepositoriesPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepositoriesPage.swift; sourceTree = "<group>"; };
 		CD84E15122B2A608007A829B /* RepositoriesPageTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepositoriesPageTests.swift; sourceTree = "<group>"; };
+		CDA7246022B53B3700CA49F4 /* Assets.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Assets.swift; sourceTree = "<group>"; };
 		CDE622A922B45D47005A0B94 /* RepositoriesViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepositoriesViewModel.swift; sourceTree = "<group>"; };
 		CDE622AB22B45E9E005A0B94 /* RepositoryTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepositoryTableViewCell.swift; sourceTree = "<group>"; };
 		CDE622AC22B45E9E005A0B94 /* RepositoryTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RepositoryTableViewCell.xib; sourceTree = "<group>"; };
@@ -204,6 +206,7 @@
 			isa = PBXGroup;
 			children = (
 				CD64618122B1A5570024F8CA /* Assets.xcassets */,
+				CDA7246022B53B3700CA49F4 /* Assets.swift */,
 				CD6461B122B1B7E70024F8CA /* Strings.swift */,
 				CD6461AF22B1B7680024F8CA /* Localizable.strings */,
 			);
@@ -541,11 +544,14 @@
 			);
 			inputPaths = (
 				$SRCROOT/TrendingRepos/Resources/en.lproj/Localizable.strings,
+				$SRCROOT/TrendingRepos/Resources/Assets.xcassets,
 			);
 			name = "Generate Resources";
 			outputFileListPaths = (
 			);
 			outputPaths = (
+				$SRCROOT/TrendingRepos/Resources/Assets.swift,
+				$SRCROOT/TrendingRepos/Resources/String.swift,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -581,6 +587,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				CD84E14D22B29F07007A829B /* RepositoriesPage.swift in Sources */,
+				CDA7246122B53B3700CA49F4 /* Assets.swift in Sources */,
 				CD6461CC22B1D57A0024F8CA /* RepositoriesViewController.swift in Sources */,
 				CDE622AD22B45E9E005A0B94 /* RepositoryTableViewCell.swift in Sources */,
 				CD6461B222B1B7E70024F8CA /* Strings.swift in Sources */,
