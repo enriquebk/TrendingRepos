@@ -30,10 +30,9 @@ class RepositoriesViewController: UIViewController, MVVMView {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.viewModel.loadFirstPage()
-        
         self.tableView.addSubview(self.refreshControl)
         self.refreshControl.addTarget(self, action: #selector(reloadTableView), for: .valueChanged)
+        self.reloadTableView()
     }
     
     func bindViewModel() {
@@ -56,12 +55,23 @@ class RepositoriesViewController: UIViewController, MVVMView {
             .rx
             .prefetchRows
             .subscribe(onNext: { [weak self] indexPaths in
-            self?.viewModel.loadPageForRepositories(at: indexPaths)
+            self?.loadRepositories(at: indexPaths)
         }).disposed(by: disposeBag)
     }
     
     @objc func reloadTableView() {
-        self.refreshControl.endRefreshing()
+        
+        self.refreshControl.beginRefreshing()
         self.viewModel.loadFirstPage()
+            .observeOn(MainScheduler.instance)
+            .subscribe(onCompleted: { [weak self] in
+            self?.refreshControl.endRefreshing()
+        }).disposed(by: self.disposeBag)
+    }
+    
+    func loadRepositories(at indexPaths: [IndexPath]) {
+        self.viewModel.loadPageForRepositories(at: indexPaths)
+            .subscribe()
+            .disposed(by: self.disposeBag)
     }
 }
