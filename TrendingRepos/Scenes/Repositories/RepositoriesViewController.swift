@@ -52,7 +52,10 @@ class RepositoriesViewController: UIViewController, MVVMView {
             }
             .disposed(by: disposeBag)
         
-        tableView.rx.prefetchRows.subscribe(onNext: { [weak self] indexPaths in
+        tableView
+            .rx
+            .prefetchRows
+            .subscribe(onNext: { [weak self] indexPaths in
             self?.viewModel.loadPageForRepositories(at: indexPaths)
         }).disposed(by: disposeBag)
     }
