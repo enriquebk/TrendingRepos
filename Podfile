@@ -9,6 +9,7 @@ target 'TrendingRepos' do
 
   pod 'RxSwift', '4.3.1'
   pod 'RxCocoa', '4.3.1'
+  pod 'Kingfisher', '5.3.0'
 
   target 'TrendingReposTests' do
     inherit! :search_paths

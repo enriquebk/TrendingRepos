@@ -7,14 +7,16 @@
 //
 
 import Foundation
+import UIKit
+import Kingfisher
 
 struct RepositoryViewState {
     
     let repositoryName: String
     let starsCountString: String
     let ownerName: String
-    let ownerAvatarURL: String
     let repositoryDescription: String
+    private let ownerAvatarURL: String
     
     init(_ repository: Repository) {
         self.repositoryName = repository.name
@@ -22,5 +24,17 @@ struct RepositoryViewState {
         self.ownerName = repository.name
         self.ownerAvatarURL = repository.owner.avatarURL
         self.repositoryDescription = repository.description ?? ""
+    }
+    
+    func loadAndDisplayAvatar(on imageView: UIImageView) {
+        
+        guard let url = URL(string: self.ownerAvatarURL) else {
+            imageView.image = Asset.placeHolder.image
+            return
+        }
+        
+        imageView.kf.setImage(
+            with: url,
+            placeholder: Asset.placeHolder.image)
     }
 }

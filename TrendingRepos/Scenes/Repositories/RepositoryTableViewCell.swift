@@ -20,8 +20,9 @@ class RepositoryTableViewCell: UITableViewCell {
         self.repositoryDescription.text = viewState.repositoryDescription
         self.ownerNameLabel.text = viewState.ownerName
         self.starCountLabel.text = viewState.starsCountString
-        self.ownerAvatarImageView.image = Asset.placeHolder.image
-        //TODO: fetch avatarURL
+        
+        if let imageView = self.ownerAvatarImageView {
+            viewState.loadAndDisplayAvatar(on: imageView)
+        }
     }
-    
 }
