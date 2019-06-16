@@ -49,6 +49,7 @@
 		CD9AE95022B5BEA20052829B /* FakeError.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD9AE94F22B5BEA20052829B /* FakeError.swift */; };
 		CD9AE95222B5C8080052829B /* IntExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD9AE95122B5C8080052829B /* IntExtensions.swift */; };
 		CD9AE95622B5CDE10052829B /* RepositoryViewStateTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD9AE95522B5CDE10052829B /* RepositoryViewStateTests.swift */; };
+		CD9AE95A22B5D2E50052829B /* RepositoriesViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD9AE95922B5D2E50052829B /* RepositoriesViewControllerTests.swift */; };
 		CDA7246122B53B3700CA49F4 /* Assets.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDA7246022B53B3700CA49F4 /* Assets.swift */; };
 		CDA7246322B542F600CA49F4 /* APIRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDA7246222B542F600CA49F4 /* APIRepository.swift */; };
 		CDA7246622B5433100CA49F4 /* APIOwner.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDA7246522B5433100CA49F4 /* APIOwner.swift */; };
@@ -130,6 +131,7 @@
 		CD9AE94F22B5BEA20052829B /* FakeError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FakeError.swift; sourceTree = "<group>"; };
 		CD9AE95122B5C8080052829B /* IntExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntExtensions.swift; sourceTree = "<group>"; };
 		CD9AE95522B5CDE10052829B /* RepositoryViewStateTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepositoryViewStateTests.swift; sourceTree = "<group>"; };
+		CD9AE95922B5D2E50052829B /* RepositoriesViewControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepositoriesViewControllerTests.swift; sourceTree = "<group>"; };
 		CDA7246022B53B3700CA49F4 /* Assets.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Assets.swift; sourceTree = "<group>"; };
 		CDA7246222B542F600CA49F4 /* APIRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIRepository.swift; sourceTree = "<group>"; };
 		CDA7246522B5433100CA49F4 /* APIOwner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIOwner.swift; sourceTree = "<group>"; };
@@ -223,6 +225,7 @@
 		CD64618E22B1A5570024F8CA /* TrendingReposTests */ = {
 			isa = PBXGroup;
 			children = (
+				CD9AE95822B5D2B00052829B /* SnapshotTests */,
 				CD9AE94E22B5BE960052829B /* Common */,
 				CD9AE94522B5A78B0052829B /* Scenes */,
 				CD9AE93F22B5A2F20052829B /* UseCases */,
@@ -410,6 +413,14 @@
 			path = Common;
 			sourceTree = "<group>";
 		};
+		CD9AE95822B5D2B00052829B /* SnapshotTests */ = {
+			isa = PBXGroup;
+			children = (
+				CD9AE95922B5D2E50052829B /* RepositoriesViewControllerTests.swift */,
+			);
+			path = SnapshotTests;
+			sourceTree = "<group>";
+		};
 		CDA7246922B5452600CA49F4 /* Datasources */ = {
 			isa = PBXGroup;
 			children = (
@@ -524,6 +535,7 @@
 				CD64618722B1A5570024F8CA /* Sources */,
 				CD64618822B1A5570024F8CA /* Frameworks */,
 				CD64618922B1A5570024F8CA /* Resources */,
+				1016C780F976D4ECD182E9C6 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -595,6 +607,23 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		1016C780F976D4ECD182E9C6 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TrendingReposTests/Pods-TrendingReposTests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TrendingReposTests/Pods-TrendingReposTests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-TrendingReposTests/Pods-TrendingReposTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		29574B28D18B4A292BABC8E6 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -744,6 +773,7 @@
 				CD6461E622B1EE970024F8CA /* RouteMock.swift in Sources */,
 				CD6461E322B1EE970024F8CA /* MVVMViewMock.swift in Sources */,
 				CD6461E422B1EE970024F8CA /* FakeViewModelNavigationManager.swift in Sources */,
+				CD9AE95A22B5D2E50052829B /* RepositoriesViewControllerTests.swift in Sources */,
 				CD6461E522B1EE970024F8CA /* UINavigationControllerMock.swift in Sources */,
 				CD6461DF22B1EE970024F8CA /* NavigationTransitionTests.swift in Sources */,
 				CD6461E722B1EE970024F8CA /* MVVMUtilsTests.swift in Sources */,

@@ -13,7 +13,7 @@ target 'TrendingRepos' do
 
   target 'TrendingReposTests' do
     inherit! :search_paths
-    # Pods for testing
+    pod 'iOSSnapshotTestCase', '2.2.0'
   end
 
 end
