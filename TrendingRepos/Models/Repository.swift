@@ -6,7 +6,7 @@
 //  Copyright © 2019 Enrique Bermúdez. All rights reserved.
 //
 
-struct Repository {
+struct Repository: Equatable{
     
     let name: String
     let description: String?

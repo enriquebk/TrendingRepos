@@ -6,7 +6,7 @@
 //  Copyright © 2019 Enrique Bermúdez. All rights reserved.
 //
 
-struct Owner {
+struct Owner: Equatable {
     let name: String
     let avatarURL: String
 }
