@@ -11,12 +11,12 @@ import RxSwift
 
 class RemoteDataSource: DataSource {
     
-    func fetch(from: Date, page: UInt) -> Observable<RepositoriesPage> {
-        
+    func fetch(from: Date, pageIndex: UInt) -> Observable<RepositoriesPage> {
+        let pageNumber = pageIndex + 1
         return APIClient()
-            .searchRepositoriesByStars(from: from, page: page)
+            .searchRepositoriesByStars(from: from, page: pageNumber)
             .map({
-            RepositoriesPage(pageIndex: page,
+            RepositoriesPage(pageIndex: pageIndex,
                              repositories: $0.repositories.toModel)
         })
     }

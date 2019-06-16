@@ -23,6 +23,6 @@ class GetMostStaredRepositoriesUseCase {
     func fetchPage(at pageIndex: UInt) -> Observable<RepositoriesPage> {
         return self.remoteDataSource
             .fetch(from: fromDate,
-                   page: pageIndex)
+                   pageIndex: pageIndex)
     }
 }

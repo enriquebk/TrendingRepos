@@ -13,11 +13,11 @@ import RxSwift
 class DataSourceMock: DataSource {
     
     public var from: Date? 
-    public var page: UInt = 0
+    public var pageIndex: UInt = 0
     
-    func fetch(from date: Date, page: UInt) -> Observable<RepositoriesPage> {
+    func fetch(from date: Date, pageIndex: UInt) -> Observable<RepositoriesPage> {
         self.from = date
-        self.page = page
+        self.pageIndex = pageIndex
         return Observable.empty()
     }
 }

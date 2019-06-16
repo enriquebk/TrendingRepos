@@ -28,7 +28,7 @@ class GetMostStaredRepositoriesUseCaseTest: XCTestCase {
                 onCompleted: { [weak self] in
                     guard let strongSelf = self else { return }
                     XCTAssertTrue(fromDate == strongSelf.dataSourceSpy.from)
-                    XCTAssertTrue(pageToFetch == strongSelf.dataSourceSpy.page)
+                    XCTAssertTrue(pageToFetch == strongSelf.dataSourceSpy.pageIndex)
                     expectation.fulfill()
             }).disposed(by: disposeBag)
         
