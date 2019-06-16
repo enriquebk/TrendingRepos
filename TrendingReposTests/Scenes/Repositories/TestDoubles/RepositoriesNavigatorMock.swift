@@ -12,7 +12,7 @@ import RxSwift
 
 class RepositoriesNavigatorMock: Navigator<RepositoriesRoute> {
     
-    public var navigation:RepositoriesRoute?
+    public var navigation: RepositoriesRoute?
     
     init() {
         super.init(root: UIViewController())

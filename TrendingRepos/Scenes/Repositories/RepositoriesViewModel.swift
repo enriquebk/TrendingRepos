@@ -46,7 +46,7 @@ class RepositoriesViewModel: ViewModel, NavigationManager {
         }) != nil
         
         if needsToLoadNewPage {
-            let pageIndex:UInt = self.loadedPages.last != nil ? 0 : (self.loadedPages.last?.pageIndex ?? 0 + 1)
+            let pageIndex: UInt = self.loadedPages.last != nil ? 0 : (self.loadedPages.last?.pageIndex ?? 0 + 1)
             
             return self.loadPage(pageIndex: pageIndex)
         }
