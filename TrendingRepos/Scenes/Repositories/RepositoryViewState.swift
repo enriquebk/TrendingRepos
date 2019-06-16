@@ -21,7 +21,7 @@ struct RepositoryViewState {
     init(_ repository: Repository) {
         self.repositoryName = repository.name
         self.starsCountString = repository.starsCount.abbreviated
-        self.ownerName = repository.name
+        self.ownerName = repository.owner.name
         self.ownerAvatarURL = repository.owner.avatarURL
         self.repositoryDescription = repository.description ?? ""
     }
