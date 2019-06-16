@@ -8,8 +8,8 @@
 
 import Foundation
 
-struct RepositoriesPage: Codable, Equatable {
-    let repositories: [Repository]
+struct APIRepositoriesPage: Codable, Equatable {
+    let repositories: [APIRepository]
     
     enum CodingKeys: String, CodingKey {
         case repositories = "items"

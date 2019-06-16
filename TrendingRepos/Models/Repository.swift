@@ -6,14 +6,10 @@
 //  Copyright © 2019 Enrique Bermúdez. All rights reserved.
 //
 
-struct Repository: Codable, Equatable {
+struct Repository: Equatable {
     
     let name: String
     let description: String?
     let starsCount: Int
     let owner: Owner
-    
-    enum CodingKeys: String, CodingKey {
-        case name, starsCount = "stargazers_count", description, owner
-    }
 }

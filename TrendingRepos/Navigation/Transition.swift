@@ -24,10 +24,10 @@ public class NavigationTransition: Transition {
         case noTransition
     }
     
-    private var systemTransition: NavigationType
+    public var type: NavigationType
     
     public init(_ transition: NavigationType) {
-        systemTransition = transition
+        type = transition
     }
     
     public func execute(from presentable: Presentable) {
@@ -36,7 +36,7 @@ public class NavigationTransition: Transition {
             return
         }
         
-        switch self.systemTransition {
+        switch self.type {
             
         case let .push(destination):
             sourceVC.navigationController?.pushViewController(destination, animated: true)

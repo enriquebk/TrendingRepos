@@ -1,4 +1,10 @@
 PODS:
+  - iOSSnapshotTestCase (2.2.0):
+    - iOSSnapshotTestCase/SwiftSupport (= 2.2.0)
+  - iOSSnapshotTestCase/Core (2.2.0)
+  - iOSSnapshotTestCase/SwiftSupport (2.2.0):
+    - iOSSnapshotTestCase/Core
+  - Kingfisher (5.3.0)
   - RxCocoa (4.3.1):
     - RxSwift (~> 4.0)
   - RxSwift (4.3.1)
@@ -6,6 +12,8 @@ PODS:
   - SwiftLint (0.27.0)
 
 DEPENDENCIES:
+  - iOSSnapshotTestCase (= 2.2.0)
+  - Kingfisher (= 5.3.0)
   - RxCocoa (= 4.3.1)
   - RxSwift (= 4.3.1)
   - SwiftGen (= 6.0.2)
@@ -13,17 +21,21 @@ DEPENDENCIES:
 
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
+    - iOSSnapshotTestCase
+    - Kingfisher
     - RxCocoa
     - RxSwift
     - SwiftGen
     - SwiftLint
 
 SPEC CHECKSUMS:
+  iOSSnapshotTestCase: 415bd84f9dbba4ff45fede49d800bc7332fbedac
+  Kingfisher: 4692c783ffb99e9e2e40a6eb3e518c3b96c6fa8c
   RxCocoa: 78763c7b07d02455598d9fc3c1ad091a28b73635
   RxSwift: fe0fd770a43acdb7d0a53da411c9b892e69bb6e4
   SwiftGen: e5b047067aa84082826a0c4f1c4c2ddc95bcf74c
   SwiftLint: 3207c1faa2240bf8973b191820a116113cd11073
 
-PODFILE CHECKSUM: bd632443668ba8a8989337df401a15cb4166521b
+PODFILE CHECKSUM: 02ea47d6bafee04ae372c45a77c71fd70f1d7d93
 
 COCOAPODS: 1.7.1

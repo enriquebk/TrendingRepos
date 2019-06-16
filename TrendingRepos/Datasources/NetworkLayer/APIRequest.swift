@@ -10,7 +10,7 @@ import Foundation
 
 enum APIRequest {
 
-    case searchRepositoriesByStars(page:Int, fromDate:Date)
+    case searchRepositoriesByStars(page:UInt, fromDate:Date)
     
     private var scheme: String {
         return "https"

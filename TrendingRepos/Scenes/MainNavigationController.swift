@@ -11,7 +11,7 @@ import UIKit
 class MainNavigationController: UINavigationController {
 
     init() {
-        let root = RepositoryListTableViewController()
+        let root = RepositoriesViewController.instantiate(with: RepositoriesViewModel())
         super.init(rootViewController: root)
     }
     

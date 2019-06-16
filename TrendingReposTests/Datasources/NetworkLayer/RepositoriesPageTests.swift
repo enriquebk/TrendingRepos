@@ -14,7 +14,7 @@ class RepositoriesPageTests: XCTestCase {
     func testParseRepositoriesPage() {
         
         if let jsonData = testJsonData {
-            let page = try? JSONDecoder().decode(RepositoriesPage.self, from: jsonData)
+            let page = try? JSONDecoder().decode(APIRepositoriesPage.self, from: jsonData)
             XCTAssertEqual(page, expectedResult)
         } else {
             XCTFail("Error while parsing RepositoriesPage")
@@ -26,11 +26,11 @@ class RepositoriesPageTests: XCTestCase {
 // swiftlint:disable line_length
 extension RepositoriesPageTests {
     
-    private var expectedResult: RepositoriesPage {
-        return RepositoriesPage(repositories: [Repository(name: "FindCrypt-Ghidra",
+    private var expectedResult: APIRepositoriesPage {
+        return APIRepositoriesPage(repositories: [APIRepository(name: "FindCrypt-Ghidra",
                                                    description: "IDA Pro's FindCrypt ported to Ghidra, with an updated and customizable signature database",
                                                    starsCount: 186,
-                                                   owner: Owner(name: "d3v1l401",
+                                                   owner: APIOwner(name: "d3v1l401",
                                                                 avatarURL: "https://avatars2.githubusercontent.com/u/7295314?v=4"))])
     }
     
