@@ -11,12 +11,12 @@ import FBSnapshotTestCase
 @testable import TrendingRepos
 
 class RepositoriesViewControllerTests: FBSnapshotTestCase {
-
-    func testRepositoriesViewControllerLayout() {
+    
+    func testRepositoriesViewControllerTableViewLayout() {
 
         let viewModel = RepositoriesViewModel(useCase:
             GetMostStaredRepositoriesUseCaseMock())
         let repositoriesViewController = RepositoriesViewController.instantiate(with: viewModel)
-        FBSnapshotVerifyView(repositoriesViewController.view)
+        FBSnapshotVerifyView(repositoriesViewController.tableView, tolerance: 0.8)
     }
 }
