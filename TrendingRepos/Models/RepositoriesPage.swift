@@ -8,7 +8,7 @@
 
 import Foundation
 
-struct RepositoriesPage {
-    let pageIndex: Int
+struct RepositoriesPage: Equatable {
+    let pageIndex: UInt
     let repositories: [Repository]
 }

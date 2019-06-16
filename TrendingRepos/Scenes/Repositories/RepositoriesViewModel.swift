@@ -46,14 +46,14 @@ class RepositoriesViewModel: ViewModel, NavigationManager {
         }) != nil
         
         if needsToLoadNewPage {
-            if let lastPage = self.loadedPages.last {
-                return self.loadPage(pageIndex: lastPage.pageIndex + 1)
-            }
+            let pageIndex:UInt = self.loadedPages.last != nil ? 0 : (self.loadedPages.last?.pageIndex ?? 0 + 1)
+            
+            return self.loadPage(pageIndex: pageIndex)
         }
         return Completable.empty()
     }
     
-    private func loadPage(pageIndex: Int) -> Completable {
+    private func loadPage(pageIndex: UInt) -> Completable {
         
         return Completable.create { [weak self] completable -> Disposable in
             

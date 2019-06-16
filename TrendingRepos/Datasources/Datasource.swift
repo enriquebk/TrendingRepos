@@ -10,5 +10,5 @@ import Foundation
 import RxSwift
 
 protocol DataSource {
-    func fetch(from: Date, page: Int) -> Observable<RepositoriesPage>
+    func fetch(from: Date, page: UInt) -> Observable<RepositoriesPage>
 }

@@ -20,7 +20,7 @@ class APIClient: NSObject {
         return URLSession.shared.rx.data(request: request)
     }
     
-    func searchRepositoriesByStars(from date: Date, page: Int) -> Observable<APIRepositoriesPage> {
+    func searchRepositoriesByStars(from date: Date, page: UInt) -> Observable<APIRepositoriesPage> {
             
             return self.execute(request: .searchRepositoriesByStars(page: page, fromDate:date)).map({
                 do {

@@ -11,7 +11,7 @@ import RxSwift
 
 class RemoteDataSource: DataSource {
     
-    func fetch(from: Date, page: Int) -> Observable<RepositoriesPage> {
+    func fetch(from: Date, page: UInt) -> Observable<RepositoriesPage> {
         
         return APIClient()
             .searchRepositoriesByStars(from: from, page: page)
